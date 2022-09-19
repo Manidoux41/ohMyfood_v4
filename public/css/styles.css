@@ -30,22 +30,35 @@ main {
 #formHeader form {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   gap: 15px;
   margin-left: 120px;
 }
 #formHeader form input[type=text] {
   background: #EAEAEA;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
+}
+#formHeader form input[type=text]:focus {
+  outline: none;
 }
 
 #hero {
   background-color: #F6F6F6;
   padding: 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#hero h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#hero p {
+  text-align: center;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
