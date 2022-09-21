@@ -55,14 +55,19 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 25px;
   gap: 10px;
 }
 footer nav {
-  align-self: flex-start;
   gap: 15px;
   color: #fff;
+}
+@media screen and (min-width: 992px) {
+  footer nav {
+    width: 99%;
+    align-self: flex-start;
+  }
 }
 footer h2 {
   font-family: "Shrikhand", serif;
@@ -243,7 +248,7 @@ footer li > a {
 @media screen and (min-width: 768px) {
   #restaurantCards .cards_container .card {
     justify-self: center;
-    width: 47%;
+    width: 48%;
   }
 }
 @media screen and (min-width: 992px) {
