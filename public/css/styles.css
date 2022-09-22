@@ -308,6 +308,11 @@ footer li > a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  #container {
+    width: 100%;
+  }
+}
 
 .imageheading {
   width: 100%;
@@ -327,6 +332,15 @@ footer li > a {
   border-radius: 25px;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
+  display: flex;
+  flex-direction: column;
+}
+.menuContainer .title {
+  padding-top: 25px;
+}
+.menuContainer .title h2 {
+  font-family: "Shrikhand", serif;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
