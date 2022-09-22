@@ -11,6 +11,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 li {
   list-style-type: none;
 }
@@ -30,7 +34,11 @@ a {
 *************************************************HEADER***************************************
 **********************************************************************************************/
 header {
+  position: sticky;
+  top: 0;
+  background: #fff;
   padding: 20px 0;
+  z-index: 2;
 }
 header h1 {
   font-family: "Shrikhand", serif;
@@ -43,12 +51,15 @@ header h1 {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /*********************************************************************************************
 *************************************************FOOTER***************************************
 **********************************************************************************************/
 footer {
+  position: sticky;
+  bottom: 0;
   background: #353535;
   padding: 25px;
   color: #fff;
@@ -58,6 +69,7 @@ footer {
   align-items: flex-start;
   gap: 25px;
   gap: 10px;
+  z-index: 2;
 }
 footer nav {
   gap: 15px;
