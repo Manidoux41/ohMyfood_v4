@@ -333,7 +333,7 @@ footer li > a {
 .menuContainer {
   position: relative;
   height: auto;
-  top: -5px;
+  top: -25px;
   border: none;
   border-radius: 25px;
   background-color: #fff;
