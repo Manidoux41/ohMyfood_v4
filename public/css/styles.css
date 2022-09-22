@@ -34,7 +34,7 @@ a {
 *************************************************HEADER***************************************
 **********************************************************************************************/
 header {
-  position: sticky;
+  position: relative;
   top: 0;
   background: #fff;
   padding: 20px 0;
@@ -43,6 +43,12 @@ header {
 header h1 {
   font-family: "Shrikhand", serif;
   text-align: center;
+}
+header .returnHome {
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 /*********************************************************************************************
@@ -341,6 +347,10 @@ footer li > a {
 .menuContainer .title h2 {
   font-family: "Shrikhand", serif;
   text-align: center;
+}
+
+.categorie__menu {
+  padding: 35px 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
