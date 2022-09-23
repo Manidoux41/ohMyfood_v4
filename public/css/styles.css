@@ -40,6 +40,11 @@ header {
   padding: 20px 0;
   z-index: 2;
 }
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
 header h1 {
   font-family: "Shrikhand", serif;
   text-align: center;
@@ -48,7 +53,7 @@ header .returnHome {
   font-size: 30px;
   position: absolute;
   top: 25px;
-  left: 25px;
+  left: 5px;
 }
 
 /*********************************************************************************************
@@ -336,7 +341,7 @@ footer li > a {
   top: -25px;
   border: none;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: #F6F6F6;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
   display: flex;
   flex-direction: column;
@@ -351,6 +356,38 @@ footer li > a {
 
 .categorie__menu {
   padding: 35px 20px;
+}
+.categorie__menu--title {
+  color: rgb(45, 4, 4);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+.categorie__menu--title::after {
+  content: "";
+  height: 5px;
+  width: 55px;
+  background-color: #99E2D0;
+}
+.categorie__menu .card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 16px;
+}
+.categorie__menu .card .content {
+  display: flex;
+  flex-direction: column;
+}
+.categorie__menu .card span {
+  align-self: flex-end;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
