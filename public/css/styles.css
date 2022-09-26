@@ -353,10 +353,18 @@ footer li > a {
 }
 .menuContainer .title {
   padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 .menuContainer .title h2 {
   font-family: "Shrikhand", serif;
   text-align: center;
+}
+.menuContainer .title .like {
+  font-size: 30px;
+  font-weight: 100;
+  align-self: center;
+  color: #3A3A3A;
 }
 
 .categorie__menu {
