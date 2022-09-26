@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch src/scss/main.scss public/css/styles.css"
+    "watch": "sass --watch src/scss/main.scss public/css/styles.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16"
   }
 }
