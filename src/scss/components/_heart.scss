@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+
+.like {
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    align-self: center;
+    @include flexPosition(row, center, center);
+    position: relative;
+    .fa-heart {
+      align-self: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .fa-regular {
+      color: $darkred;
+    }
+    .fa-solid {
+      color: transparent;
+      background-image: $linearBlue;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: 0.3s ease-in;
+    }
+    &:hover .fa-solid {
+      opacity: 1;
+    }
+} 
