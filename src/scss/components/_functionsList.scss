@@ -1,0 +1,76 @@
+@use "../abstracts/" as *;
+/****************************FUNCTIONSLIST*******************************************************/
+
+#functionsList {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: $titleLevel1;
+    align-self: flex-start;
+    margin-bottom: 25px;
+    margin-left: -8px;
+  }
+  ol {
+    counter-reset: section;
+    width: 100%;
+    @include flexPositionSimple(column, space-between);
+    gap: 16px;  
+    @media screen and (min-width:768px) {
+      @include flexPositionSimple(row, space-between);
+      flex-wrap: wrap;   
+    }
+    @media screen and (min-width:992px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    li {
+      list-style-type: none;
+      background-color: $lightgrey;
+      width:100%;
+      padding: 15px 15px 15px 5px;
+      margin: 0 auto;
+      border-radius: 16px;
+      @include boxShadowButton;
+      display: flex;
+      justify-content: space-between;
+      @include zoomTransition();
+      &:hover {
+        @include zoomTransform();
+      }
+      &::before {
+        counter-increment: section;
+        content: counter(section);
+        background: $darkblue;
+        padding: 5px 10px;
+        border-radius: 50%;
+        margin-left: -15px;
+        margin-right: 15px;
+        justify-self: left;
+        color: $white;
+      }      
+      @media screen and (min-width:768px) {
+        width: 40%;
+      }
+      @media screen and (min-width:992px) {
+        width: 31%;
+      }
+      .fa-solid {
+        align-self: center;
+        color: $darkgrey;
+        font-size: 25px;
+      }
+      a {
+        display: block;
+        align-self: center;
+        justify-self: flex-start;
+        color: black;
+        font-size: 0.9em;
+        text-decoration: none;
+        padding-right: 30px;
+        margin-left: 15px;
+      }
+    }
+  }
+}

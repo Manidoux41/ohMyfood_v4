@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap';
+
+/* Colors */
+$greyblue: #EAEAEA;
+$lightgrey: #F6F6F6;
+$darkgrey: #7E7E7E;
+$lightblue: #FF79DA;
+$darkblue: #9356DC;
+$darkred: #3A3A3A;
+$blue: blue;
+$white: #fff;
+$black: #000000;
+$greenfooter: #353535;
+$tagColor: #99E2D0;
+$tagWordColor: #008766;
+
+/* Linear gradient */
+$linearBlue: linear-gradient(0.45turn, $lightblue, $darkblue);
+
+
+/* Fonts */
+$fontWebsite: 'Roboto', sans-serif;
+$fontTitle: 'Shrikhand', serif;
+
+/* Title Level */
+$titleLevel1: 30px;
+$titleLevel6: 16px;
+
+/* Animation */
+$animation-duration: 3s;

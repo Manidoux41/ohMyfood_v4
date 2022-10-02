@@ -1,0 +1,34 @@
+@mixin boxShadowButton(){
+    box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
+}
+@mixin flexPosition($direction, $justify, $align) {
+    display: flex;
+    flex-direction: #{$direction};
+    justify-content: #{$justify};
+    align-items: #{$align};
+    gap: 25px;
+}
+@mixin flexPositionSimple ($direction, $justify){
+    display: flex;
+    flex-direction: #{$direction};
+    justify-content: #{$justify};
+}
+@mixin zoomTransform {
+    transform: scale(1.02);
+}
+@mixin zoomTransition {
+    transition: .2s ease;
+}
+@mixin buttonBlue {
+        color: blue;
+        border-radius: 25px;
+        padding: 15px 25px;
+        background: linear-gradient(0.45turn, #FF79DA, #9356DC);
+        color:#fff;
+        border: none;
+        margin-bottom: 25px;
+        cursor: pointer;
+        &:hover{
+            @include zoomTransform();
+        }
+}
