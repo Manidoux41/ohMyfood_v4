@@ -386,6 +386,7 @@ footer li > a {
   opacity: 1;
 }
 
+/****************************MENU PAGE*******************************************************/
 #container {
   display: flex;
   flex-direction: column;
@@ -485,6 +486,7 @@ footer li > a {
   transform: scale(1.02);
 }
 
+/****************************MENU COMPOSANTS*******************************************************/
 .categorie__menu {
   display: flex;
   flex-direction: column;
@@ -607,6 +609,7 @@ footer li > a {
     opacity: 1;
   }
 }
+/****************************LOADER*******************************************************/
 .loader {
   position: fixed;
   display: flex;
