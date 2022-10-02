@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+/****************************LOADER*******************************************************/
+
+
+.loader {
+    position: fixed;
+    @include flexPosition(row, center, center);
+    background: $white;
+    height: 100vh;
+    inset: 0;
+    z-index: 99;
+    opacity: .9;
+    animation: disappear 200ms $animation-duration forwards;    
+    transform-origin: top;
+    i {
+        animation: spin $animation-duration infinite linear;
+    }
+}
+
+@keyframes disappear {
+    to {
+        transform: scale(0);        
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

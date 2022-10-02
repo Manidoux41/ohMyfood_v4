@@ -1,0 +1,27 @@
+@use '../abstracts/' as *;
+/****************************HERO*******************************************************/
+
+#hero {
+    background-color: $lightgrey;
+    padding: 25px;
+    display: flex;
+    @include flexPosition(column, center, center);
+    h2 {
+        font-size: $titleLevel1;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    p{
+        text-align: center;
+        font-size: $titleLevel6;
+        margin-bottom: 25px;
+    }
+    .btn {
+        @include buttonBlue();
+        @include boxShadowButton();
+        @include zoomTransition();
+        &:hover{
+            @include zoomTransform();
+        }
+    }    
+}

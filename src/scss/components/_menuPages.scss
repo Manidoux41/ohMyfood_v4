@@ -1,0 +1,83 @@
+@use "../abstracts/" as *;
+/****************************MENU PAGE*******************************************************/
+
+#container {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -25px;
+  @media screen and (min-width: 992px) {
+    width: 100%;
+  }
+}
+.imageheading {
+  width: 100%;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.menuContainer {
+  position: relative;
+  height: auto;
+  top: -25px;
+  border: none;
+  border-radius: 25px 25px 0 0;
+  background-color: $lightgrey;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .title {
+    padding-top: 25px;
+    @include flexPositionSimple(row, space-around);
+    h2 {
+      font-family: $fontTitle;
+      text-align: center;
+    }
+    .like {
+      position: relative;
+      font-size: 30px;
+      font-weight: 100;
+      align-self: center;
+      border: 1px solid red;
+      @include flexPosition(row, center, center);
+      position: relative;
+      .fa-heart {
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .fa-regular {
+        color: $darkred;
+      }
+      .fa-solid {
+        color: transparent;
+        background-image: $linearBlue;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 0.3s ease-in;
+      }
+      &:hover .fa-solid {
+        opacity: 1;
+      }
+    }    
+  }
+  .contentMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .btn {
+    @include buttonBlue();
+    text-align: center;
+    align-self: center;
+    width: 250px;
+  }  
+}

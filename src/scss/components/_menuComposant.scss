@@ -1,0 +1,106 @@
+@use "../abstracts/" as *;
+/****************************MENU COMPOSANTS*******************************************************/
+
+.categorie__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px 20px;
+  @media screen and (min-width: 992px) {
+    width: 32%;
+  }
+  &--title {
+    color: rgb(45, 4, 4);
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 25px;
+    @include flexPositionSimple(column, space-between);
+    gap: 5px;
+    &::after {
+      content: "";
+      height: 5px;
+      width: 55px;
+      background-color: #99e2d0;
+    }
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    margin: 15px 0;
+    border-radius: 16px;
+    overflow: hidden;
+    @include boxShadowButton();
+    @include zoomTransition();
+    animation: itemsappear 1s;
+    animation-fill-mode: both;
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+      }
+    }
+    &:hover {
+      @include zoomTransform();
+    }
+    &__content {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__info {
+      @include flexPosition(row, center, center);
+      .card__price {
+        padding: 10px;
+        align-self: flex-end;
+        justify-self: center;
+        font-weight: 700;
+        transition: 0.5s ease;
+      }
+      .card__check {
+        @include flexPosition(row, center, center);
+        background: #99e2d0;
+        color: #fff;
+        width: 50px;
+        height: 58px;
+        margin-right: -50px;
+        transition: all 0.2s ease-in;
+        .fa-regular {
+          font-size: 30px;
+          font-weight: 900;
+          align-self: center;
+          justify-self: center;
+          transform: rotate(180deg);
+          transition: all 0.5s ease-in;
+        }
+      }
+      &:hover .card__check {
+        margin-right: 0;
+      }
+      &:hover .fa-regular {
+        transform: rotate(360deg);
+      }
+    }
+    .card__content {
+      overflow: hidden;
+      h4,
+      p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+/****Animations*****/
+@keyframes itemsappear {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
