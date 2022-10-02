@@ -1,13 +1,86 @@
+@use '../abstracts/' as *;
+
+.categorie__menu {
+    width: 100%;
+    padding: 35px 20px;
+    @media screen and (min-width:992px) {
+        width: 31%;
+    }
+    &--title {
+        color: rgb(45, 4, 4);
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+        &::after{
+            content:'';
+            height: 5px;
+            width: 55px;
+            background-color: #99E2D0;            
+        }
+    }
+    .card {
+        display: flex;
+        justify-content: space-between;
+        background-color: $white;
+        margin: 15px 0;
+        border-radius: 16px;
+        overflow: hidden;
+        &__content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .card__price {
+                padding: 10px;
+                align-self: center;
+                justify-self: center;
+                font-weight: 700;
+                transition: 0.5s ease;        
+            }            
+            .card__check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #99E2D0;
+                color: #fff;
+                width: 50px;
+                height: 58px;
+                margin-right: -50px;
+                transition: all .2s ease-in;
+                .fa-regular {
+                    font-size: 30px;
+                    font-weight: 900;
+                    align-self: center;
+                    justify-self: center;
+                    transform: rotate(-180deg);
+                    transition: all .5s ease-in;
+                }        
+        }
+        &:hover .card__check {
+            margin-right: 0;
+        }
+        &:hover .fa-regular {
+            transform: rotate(-360deg);
+        }
+        }
+    }
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Favicons-->
-    <link rel="shortcut icon" href="/public/assets/icon/favicon.ico" type="image/x-icon">
     <!--css-->
-    <link rel="stylesheet" href="../public/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="../public/css/styles.css" type="text/css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css">
@@ -23,14 +96,13 @@
     <main>
         <section id="container">
             <div class="imageheading">
-                <img src="../public/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La palette du goût">
+                <img src="../public/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
             </div>
             <div class="menuContainer wrapper">
                 <div class="title">
                     <h2>La palette du goût</h2>
                     <div class="like">
                         <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
                     </div>
                 </div>
                 <div class="contentMenu">
@@ -38,7 +110,7 @@
                         <h3 class="categorie__menu--title">
                             Entrées
                         </h3>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Fricassé d'escargot</h4>
                                 <p>Au piment d'espelette</p>
@@ -48,7 +120,7 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Foie gras de canard mi-cuit</h4>
                                 <p>Et ses copeaux de truffe noire</p>
@@ -58,7 +130,7 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Oeuf au plat</h4>
                                 <p>Assaisonné à la truffe sur lit de...</p>
@@ -73,7 +145,7 @@
                         <h3 class="categorie__menu--title">
                             Plats
                         </h3>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Filet de boeuf aux herbes</h4>
                                 <p>Accompagné de sa ribambelle de légu...</p>
@@ -83,9 +155,9 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
-                                <h4 class="menu__name">Parmentier de queue de boeuf</h4>
+                                <h4 class="menu__name">ärmentier de queue de boeuf</h4>
                                 <p>A la truffe noire sur sa purée de panais</p>
                             </div>
                             <div class="card__info">
@@ -93,7 +165,7 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Filet de Turbot</h4>
                                 <p>Aux agrumes</p>
@@ -108,7 +180,7 @@
                         <h3 class="categorie__menu--title">
                             Desserts
                         </h3>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Paris-Brest</h4>
                                 <p>Revisité</p>
@@ -118,7 +190,7 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Macaron au chocolat d'exception</h4>
                                 <p>Et glace à la vanille de Madagascar</p>
@@ -128,7 +200,7 @@
                                 <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
                             </div>
                         </a>
-                        <a href="#" class="card">
+                        <a href="" class="card">
                             <div class="card__content">
                                 <h4 class="menu__name">Mousse au chocolat</h4>
                                 <p>Au piment d'espelette et à la truffe noire</p>
@@ -140,7 +212,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="btn">Commander</div>
             </div>
         </section>
         
@@ -152,17 +223,20 @@
             <ul>
                 <li>
                     <i class="fa-solid fa-utensils"></i>
-                    <a href="#">   Proposer un restaurant</a>
+                    <a href="">   Proposer un restaurant</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#">Devenir partenaire</a>
+                    <a href="">Devenir partenaire</a>
                 </li>
                 <li>
-                    <a href="#">Mentions légales</a>
+                    <a href="">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="mailto:email@example.com?subject=Contactez ohMyfood">Contact</a>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href=""></a>
                 </li>
             </ul>
         </nav>

@@ -4,106 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicons-->
+    <link rel="shortcut icon" href="/public/assets/icon/favicon.ico" type="image/x-icon">
     <!--css-->
     <link rel="stylesheet" href="../public/css/styles.css" type="text/css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css">
-    <title>ohMyFood - Menu 1</title>
+    <title>ohMyFood - Menu 3</title>
 </head>
 <body>
-    <header>
+    <header class="wrapper">
         <a href="../index.html" class="returnHome">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
         <h1>ohmyfood</h1>
     </header>
     <main>
-        <section id="container" class="wrapper">
+        <section id="container">
             <div class="imageheading">
-                <img src="../public/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                <img src="../public/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="A la française">
             </div>
-            <div class="menuContainer">
+            <div class="menuContainer wrapper">
                 <div class="title">
                     <h2>A la française</h2>
+                    <div class="like">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
                 </div>
-                <div class="categorie__menu">
-                    <h3 class="categorie__menu--title">
-                        Entrées
-                    </h3>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
+                <div class="contentMenu">
+                    <div class="categorie__menu">
+                        <h3 class="categorie__menu--title">
+                            Entrées
+                        </h3>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Tartare de poulpe acidulé</h4>
+                                <p>Aux zests d'orange</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">25€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Velouté de légumes d'antan</h4>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">35€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Soupe à l'oignon</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">20€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categorie__menu">
+                        <h3 class="categorie__menu--title">
+                            Plats
+                        </h3>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Coquilles Saint-Jacques</h4>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">40€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Magret de canard</h4>
+                                <p>Et parmentier de pommes de terres</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">35€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Pigeonneau d'Ille-et-Vilaine</h4>
+                                <p>Sur son lit de gnocchis au légumes</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">44€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categorie__menu">
+                        <h3 class="categorie__menu--title">
+                            Desserts
+                        </h3>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Pétales de violettes glacés</h4>
+                                <p>Et purée de noisettes</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">18€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Fondant au chocolat</h4>
+                                <p>Revisité</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">22€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card__content">
+                                <h4 class="menu__name">Millefeuille croustillant</h4>
+                                <p>Myrtilles et pâtes d'amande</p>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__price">23€</span>
+                                <span class="card__check"><i class="fa-regular fa-circle-check"></i></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="categorie__menu">
-                    <h3 class="categorie__menu--title">
-                        Plats
-                    </h3>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                </div>
-                <div class="categorie__menu">
-                    <h3 class="categorie__menu--title">
-                        Desserts
-                    </h3>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                    <a href="" class="card">
-                        <div class="content">
-                            <h4 class="menu__name">Fircassé d'escargot</h4>
-                            <p>Au piment d'espelette</p>
-                        </div>
-                        <span>25€</span>
-                    </a>
-                </div>        
+                <div class="btn">Commander</div>
             </div>
         </section>
         
@@ -124,10 +161,7 @@
                     <a href="">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
-                </li>
-                <li>
-                    <a href=""></a>
+                    <a href="mailto:email@example.com?subject=Contactez ohMyfood">Contact</a>
                 </li>
             </ul>
         </nav>
