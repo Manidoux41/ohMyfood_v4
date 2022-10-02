@@ -206,6 +206,7 @@ footer li > a {
 }
 @media screen and (min-width: 768px) {
   #functionsList ol {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -293,9 +294,10 @@ footer li > a {
 }
 @media screen and (min-width: 768px) {
   #restaurantCards .cards_container {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 #restaurantCards .cards_container .card {
@@ -420,6 +422,7 @@ footer li > a {
 .menuContainer .title {
   padding-top: 25px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 .menuContainer .title h2 {
@@ -544,8 +547,10 @@ footer li > a {
 }
 .categorie__menu .card__info {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 .categorie__menu .card__info .card__price {
   padding: 10px;
@@ -556,8 +561,10 @@ footer li > a {
 }
 .categorie__menu .card__info .card__check {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 25px;
   background: #99e2d0;
   color: #fff;
   width: 50px;
@@ -582,7 +589,8 @@ footer li > a {
 .categorie__menu .card .card__content {
   overflow: hidden;
 }
-.categorie__menu .card .card__content h4, .categorie__menu .card .card__content p {
+.categorie__menu .card .card__content h4,
+.categorie__menu .card .card__content p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -602,8 +610,10 @@ footer li > a {
 .loader {
   position: fixed;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 25px;
   background: #fff;
   height: 100vh;
   inset: 0;
