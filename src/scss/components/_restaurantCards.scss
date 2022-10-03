@@ -64,7 +64,13 @@
                 background: $white;
                 height: 25%;
                 @include flexPosition(row, space-between, center);
-                padding: 25px;                
+                padding: 25px;
+                overflow: hidden;
+                .contentText {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }               
             }
         }
     }

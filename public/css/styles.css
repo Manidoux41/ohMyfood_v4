@@ -353,6 +353,12 @@ footer li > a {
   align-items: center;
   gap: 25px;
   padding: 25px;
+  overflow: hidden;
+}
+#restaurantCards .cards_container .card .content .contentText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /****************************MENU PAGE*******************************************************/
@@ -560,10 +566,6 @@ footer li > a {
 }
 .like .fa-heart {
   align-self: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .like .fa-regular {
   color: #3A3A3A;
