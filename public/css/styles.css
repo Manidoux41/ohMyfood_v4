@@ -173,12 +173,15 @@ footer li > a {
   color: #fff;
   border: none;
   margin-bottom: 25px;
+  opacity: 1;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
   transition: 0.2s ease;
 }
 #hero .btn:hover {
   transform: scale(1.02);
+  opacity: 0.85;
 }
 #hero .btn:hover {
   transform: scale(1.02);
@@ -195,7 +198,7 @@ footer li > a {
   font-size: 30px;
   align-self: flex-start;
   margin-bottom: 25px;
-  margin-left: -8px;
+  margin-left: 0;
 }
 #functionsList ol {
   counter-reset: section;
@@ -228,7 +231,6 @@ footer li > a {
   border-radius: 16px;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
   display: flex;
-  justify-content: space-between;
   transition: 0.2s ease;
 }
 #functionsList ol li:hover {
@@ -268,23 +270,25 @@ footer li > a {
   font-size: 0.9em;
   text-decoration: none;
   padding-right: 30px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 /**************************************RESTAURANT CARDS*********************************************/
 #restaurantCards {
+  margin-top: 50px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
+  background: #F6F6F6;
 }
 #restaurantCards h2 {
   font-size: 30px;
   align-self: flex-start;
-  margin-bottom: 25px;
-  margin-left: -8px;
+  padding: 25px 0 5px 0;
+  margin-left: 0;
 }
 #restaurantCards .cards_container {
   display: flex;
@@ -353,12 +357,6 @@ footer li > a {
   align-items: center;
   gap: 25px;
   padding: 25px;
-  overflow: hidden;
-}
-#restaurantCards .cards_container .card .content .contentText {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 /****************************MENU PAGE*******************************************************/
@@ -419,13 +417,16 @@ footer li > a {
   color: #fff;
   border: none;
   margin-bottom: 25px;
+  opacity: 1;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   text-align: center;
   align-self: center;
   width: 250px;
 }
 .menuContainer .btn:hover {
   transform: scale(1.02);
+  opacity: 0.85;
 }
 
 /****************************MENU COMPOSANTS*******************************************************/

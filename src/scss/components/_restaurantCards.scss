@@ -2,13 +2,15 @@
 /**************************************RESTAURANT CARDS*********************************************/
 
 #restaurantCards {
+    margin-top: 50px;
     padding: 25px;
     @include flexPosition(column, center, center);
+    background: $lightgrey;
     h2 {
         font-size: $titleLevel1;
         align-self: flex-start;
-        margin-bottom: 25px;
-        margin-left: -8px;
+        padding: 25px 0 5px 0;
+        margin-left: 0;
     }
     .cards_container{
         display: flex;
@@ -64,13 +66,7 @@
                 background: $white;
                 height: 25%;
                 @include flexPosition(row, space-between, center);
-                padding: 25px;
-                overflow: hidden;
-                .contentText {
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }               
+                padding: 25px;               
             }
         }
     }
