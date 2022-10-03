@@ -43,6 +43,7 @@ header {
   top: 0;
   background: #fff;
   padding: 20px 0;
+  box-shadow: 0 3px 3px 1px grey;
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
