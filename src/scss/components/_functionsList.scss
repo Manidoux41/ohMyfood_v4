@@ -33,8 +33,7 @@
       margin: 0 auto;
       border-radius: 16px;
       @include boxShadowButton;
-      display: flex;
-      justify-content: space-between;
+      @include flexPositionSimple(row, space-between);
       @include zoomTransition();
       &:hover {
         @include zoomTransform();
