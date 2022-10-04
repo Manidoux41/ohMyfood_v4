@@ -604,6 +604,11 @@ footer li > a {
 }
 .like .fa-regular {
   color: #3A3A3A;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.like:hover .fa-regular {
+  opacity: 0;
 }
 .like .fa-solid {
   color: transparent;

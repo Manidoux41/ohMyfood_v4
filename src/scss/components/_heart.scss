@@ -17,6 +17,11 @@
     }
     .fa-regular {
       color: $darkred;
+      opacity: 1;
+      transition: 0.3s ease-in;
+    }
+    &:hover .fa-regular {
+      opacity: 0;
     }
     .fa-solid {
       color: transparent;
