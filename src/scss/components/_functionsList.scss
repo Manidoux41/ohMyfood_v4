@@ -58,29 +58,34 @@
       @media screen and (min-width:992px) {
         width: 31%;
       }
+      span:nth-child(2){
+        
+        justify-self: flex-start;
+      }
       span {
-        width: 135px;
-        height: 50px;
-        padding: 0 15px;
+        width: 30px;
+        height: 30px;
+        // padding: 0 15px;
         display: flex;
         align-self: center;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        text-overflow: ellipsis;        
         .fa-solid {
           align-self: center;
           color: $darkgrey;
-          font-size: 30px;
+          font-size: 18px;
         }
       }
       a {
+        display: inline-block;
+        width: 100%;
         align-self: center;
-        justify-self: center;
+        justify-self: flex-start;
         color: black;
-        font-size: 1.2rem;
+        font-size: .9rem;
         font-weight: 800;
         text-decoration: none;
-        padding-right: 10px;
-        margin: 0 5px;
+        margin: 0 15px;
       }
     }
   }

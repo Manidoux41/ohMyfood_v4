@@ -29,6 +29,14 @@ a {
   color: #000000;
 }
 
+.title {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media screen and (min-width: 992px) {
   .wrapper {
     max-width: 1440px;
@@ -258,10 +266,12 @@ footer li > a {
     width: 31%;
   }
 }
+#functionsList ol li span:nth-child(2) {
+  justify-self: flex-start;
+}
 #functionsList ol li span {
-  width: 135px;
-  height: 50px;
-  padding: 0 15px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-self: center;
   white-space: nowrap;
@@ -270,17 +280,18 @@ footer li > a {
 #functionsList ol li span .fa-solid {
   align-self: center;
   color: #7E7E7E;
-  font-size: 30px;
+  font-size: 18px;
 }
 #functionsList ol li a {
+  display: inline-block;
+  width: 100%;
   align-self: center;
-  justify-self: center;
+  justify-self: flex-start;
   color: black;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 800;
   text-decoration: none;
-  padding-right: 10px;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 /**************************************RESTAURANT CARDS*********************************************/
