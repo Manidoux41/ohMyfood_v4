@@ -6,11 +6,15 @@
     padding: 25px;
     @include flexPosition(column, center, center);
     background: $lightgrey;
-    h2 {
-        font-size: $titleLevel1;
-        align-self: flex-start;
-        padding: 25px 0 5px 0;
-        margin-left: 0;
+    .restaurantCardsTitle{
+        width: 100%;
+        @include flexPositionSimple(row, flex-start);
+        h2 {
+            font-size: $titleLevel1;
+            align-self: flex-start;
+            padding: 25px 0 5px 0;
+            margin-left: 0;
+        }
     }
     .cards_container{
         display: flex;

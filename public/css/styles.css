@@ -305,7 +305,13 @@ footer li > a {
   gap: 25px;
   background: #F6F6F6;
 }
-#restaurantCards h2 {
+#restaurantCards .restaurantCardsTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#restaurantCards .restaurantCardsTitle h2 {
   font-size: 30px;
   align-self: flex-start;
   padding: 25px 0 5px 0;
