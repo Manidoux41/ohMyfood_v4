@@ -213,10 +213,16 @@ footer li > a {
   display: flex;
   flex-direction: column;
 }
-#functionsList h2 {
+#functionsList .functionListCardsTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#functionsList .functionListCardsTitle h2 {
   font-size: 30px;
   align-self: flex-start;
-  margin-bottom: 25px;
+  padding: 25px 0 25px 0;
   margin-left: 0;
 }
 #functionsList ol {

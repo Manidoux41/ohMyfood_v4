@@ -6,11 +6,15 @@
   padding: 25px;
   display: flex;
   flex-direction: column;
-  h2 {
-    font-size: $titleLevel1;
-    align-self: flex-start;
-    margin-bottom: 25px;
-    margin-left: 0;
+  .functionListCardsTitle {
+    width: 100%;
+    @include flexPositionSimple(row, flex-start);
+    h2 {
+      font-size: $titleLevel1;
+      align-self: flex-start;
+      padding: 25px 0 25px 0;
+      margin-left: 0;
+    }
   }
   ol {
     counter-reset: section;
