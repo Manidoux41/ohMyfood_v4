@@ -250,7 +250,7 @@ footer li > a {
 #functionsList ol li {
   background-color: #F6F6F6;
   width: 100%;
-  padding: 15px 15px 15px 15px;
+  padding: 20px 15px 20px 15px;
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
@@ -294,13 +294,13 @@ footer li > a {
 #functionsList ol li span .fa-solid {
   align-self: center;
   color: #7E7E7E;
-  font-size: 18px;
+  font-size: 25px;
 }
 #functionsList ol li a {
   display: inline-block;
   width: 100%;
   align-self: center;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   margin: 0 15px;
 }
