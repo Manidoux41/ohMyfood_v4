@@ -16,7 +16,7 @@
       opacity: 1;
       transition: 0.3s ease-in;
     }
-    &:hover .fa-regular {
+    &:hover .fa-regular, &:visited .fa-regular {
       opacity: 0;
     }
     .fa-solid {
@@ -26,7 +26,7 @@
       opacity: 0;
       transition: 0.3s ease-in;
     }
-    &:hover .fa-solid {
+    &:hover .fa-solid, &:visited .fa-solid {
       opacity: 1;
     }
 } 

@@ -610,7 +610,7 @@ footer li > a {
   opacity: 1;
   transition: 0.3s ease-in;
 }
-.like:hover .fa-regular {
+.like:hover .fa-regular, .like:visited .fa-regular {
   opacity: 0;
 }
 .like .fa-solid {
@@ -621,7 +621,7 @@ footer li > a {
   opacity: 0;
   transition: 0.3s ease-in;
 }
-.like:hover .fa-solid {
+.like:hover .fa-solid, .like:visited .fa-solid {
   opacity: 1;
 }
 
