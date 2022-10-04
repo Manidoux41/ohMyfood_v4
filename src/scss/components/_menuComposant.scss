@@ -44,14 +44,14 @@
       @include zoomTransform();
     }
     &__content {
-      padding: 10px;
+      padding: 10px 25px;
       display: flex;
       flex-direction: column;
     }
     &__info {
       @include flexPosition(row, center, center);
       .card__price {
-        padding: 10px;
+        padding: 10px 0;
         align-self: flex-end;
         justify-self: center;
         font-weight: 700;

@@ -520,7 +520,7 @@ footer li > a {
   transform: scale(1.02);
 }
 .categorie__menu .card__content {
-  padding: 10px;
+  padding: 10px 25px;
   display: flex;
   flex-direction: column;
 }
@@ -532,7 +532,7 @@ footer li > a {
   gap: 25px;
 }
 .categorie__menu .card__info .card__price {
-  padding: 10px;
+  padding: 10px 0;
   align-self: flex-end;
   justify-self: center;
   font-weight: 700;
