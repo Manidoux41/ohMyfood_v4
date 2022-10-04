@@ -62,15 +62,21 @@ header {
   box-shadow: 0 3px 3px 1px grey;
   z-index: 2;
 }
+header .heading {
+  width: 100%;
+  position: relative;
+}
 header h1 {
   font-family: "Shrikhand", serif;
   text-align: center;
 }
 header .returnHome {
+  justify-self: flex-start;
   font-size: 30px;
+  width: 100px;
   position: absolute;
-  top: 25px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
 }
 
 /*********************************************************************************************
@@ -238,7 +244,7 @@ footer li > a {
 #functionsList ol li {
   background-color: #F6F6F6;
   width: 100%;
-  padding: 15px 15px 15px 5px;
+  padding: 15px 15px 15px 15px;
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);

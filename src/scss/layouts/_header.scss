@@ -12,14 +12,22 @@ header {
     padding: 20px 0;
     box-shadow:  0 3px 3px 1px grey;
     z-index: 2;
+    .heading {
+        width: 100%;
+        position: relative;
+    }
     h1 {
         font-family: $fontTitle;
         text-align: center;
     }
     .returnHome {
+        justify-self: flex-start;
         font-size: 30px;
+        width: 100px;
+        // display: flex;
+        // justify-content: flex-start;
         position: absolute;
-        top: 25px;
-        left: 5px;
+        top: 10px;
+        left: 10px;
     }
 }

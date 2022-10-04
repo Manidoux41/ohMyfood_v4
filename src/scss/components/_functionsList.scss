@@ -28,13 +28,11 @@
     li {
       background-color: $lightgrey;
       width:100%;
-      padding: 15px 15px 15px 5px;
+      padding: 15px 15px 15px 15px;
       margin: 0 auto;
       border-radius: 16px;
       @include boxShadowButton;
-      // display: flex;
       @include flexPositionSimple(row, space-between);
-      // flex-wrap: wrap;
       @include zoomTransition();
       &:hover {
         @include zoomTransform();
