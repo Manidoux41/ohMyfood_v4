@@ -33,8 +33,9 @@
       margin: 0 auto;
       border-radius: 16px;
       @include boxShadowButton;
-      display: flex;
-      // @include flexPositionSimple(row, space-between);
+      // display: flex;
+      @include flexPositionSimple(row, space-between);
+      // flex-wrap: wrap;
       @include zoomTransition();
       &:hover {
         @include zoomTransform();
@@ -47,6 +48,7 @@
         border-radius: 50%;
         margin-left: -15px;
         margin-right: 15px;
+        align-self: center;
         justify-self: left;
         color: $white;
       }      
@@ -56,20 +58,29 @@
       @media screen and (min-width:992px) {
         width: 31%;
       }
-      .fa-solid {
+      span {
+        width: 135px;
+        height: 50px;
+        padding: 0 15px;
+        display: flex;
         align-self: center;
-        color: $darkgrey;
-        font-size: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .fa-solid {
+          align-self: center;
+          color: $darkgrey;
+          font-size: 30px;
+        }
       }
       a {
-        display: block;
         align-self: center;
-        justify-self: flex-start;
+        justify-self: center;
         color: black;
-        font-size: 0.9em;
+        font-size: 1.2rem;
+        font-weight: 800;
         text-decoration: none;
-        padding-right: 30px;
-        margin-left: 20px;
+        padding-right: 10px;
+        margin: 0 5px;
       }
     }
   }
