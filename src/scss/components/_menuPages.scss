@@ -2,7 +2,6 @@
 /****************************MENU PAGE*******************************************************/
 
 #container {
-  // position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: -25px;
@@ -13,12 +12,6 @@
 .imageheading {
   width: 100%;
   height: 300px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 .menuContainer {
   position: relative;
@@ -37,8 +30,7 @@
     h2 {
       font-family: $fontTitle;
       text-align: center;
-    }
-       
+    }       
   }
   .contentMenu {
     display: flex;
