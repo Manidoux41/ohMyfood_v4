@@ -27,8 +27,11 @@
         color:#fff;
         border: none;
         margin-bottom: 25px;
+        opacity: 1;
         cursor: pointer;
+        transition: all .3s ease-in-out;
         &:hover{
             @include zoomTransform();
+            opacity: .85;
         }
 }

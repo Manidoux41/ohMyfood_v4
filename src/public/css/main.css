@@ -29,14 +29,6 @@ a {
   color: #000000;
 }
 
-.title {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 @media screen and (min-width: 992px) {
   .wrapper {
     max-width: 1440px;
@@ -252,7 +244,6 @@ footer li > a {
   border-radius: 50%;
   margin-left: -15px;
   margin-right: 15px;
-  align-self: center;
   justify-self: left;
   color: #fff;
 }
@@ -266,32 +257,23 @@ footer li > a {
     width: 31%;
   }
 }
-#functionsList ol li span:nth-child(2) {
-  justify-self: flex-start;
-}
-#functionsList ol li span {
-  width: 30px;
-  height: 30px;
-  display: flex;
+#functionsList ol li .fa-solid {
   align-self: center;
+  color: #7E7E7E;
+  font-size: 25px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#functionsList ol li span .fa-solid {
-  align-self: center;
-  color: #7E7E7E;
-  font-size: 18px;
-}
 #functionsList ol li a {
-  display: inline-block;
-  width: 100%;
+  display: block;
   align-self: center;
   justify-self: flex-start;
   color: black;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 800;
   text-decoration: none;
-  margin: 0 15px;
+  padding-right: 30px;
+  margin-left: 20px;
 }
 
 /**************************************RESTAURANT CARDS*********************************************/
@@ -305,13 +287,7 @@ footer li > a {
   gap: 25px;
   background: #F6F6F6;
 }
-#restaurantCards .restaurantCardsTitle {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-#restaurantCards .restaurantCardsTitle h2 {
+#restaurantCards h2 {
   font-size: 30px;
   align-self: flex-start;
   padding: 25px 0 5px 0;
@@ -591,7 +567,6 @@ footer li > a {
   position: relative;
   font-size: 30px;
   font-weight: 100;
-  align-self: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -645,6 +620,4 @@ footer li > a {
   to {
     transform: rotate(360deg);
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

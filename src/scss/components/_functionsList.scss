@@ -10,7 +10,7 @@
     font-size: $titleLevel1;
     align-self: flex-start;
     margin-bottom: 25px;
-    margin-left: -8px;
+    margin-left: 0;
   }
   ol {
     counter-reset: section;
@@ -33,8 +33,9 @@
       margin: 0 auto;
       border-radius: 16px;
       @include boxShadowButton;
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      @include flexPositionSimple(row, space-between);
+      // flex-wrap: wrap;
       @include zoomTransition();
       &:hover {
         @include zoomTransform();
@@ -47,6 +48,7 @@
         border-radius: 50%;
         margin-left: -15px;
         margin-right: 15px;
+        align-self: center;
         justify-self: left;
         color: $white;
       }      
@@ -56,20 +58,34 @@
       @media screen and (min-width:992px) {
         width: 31%;
       }
-      .fa-solid {
+      span:nth-child(2){
+        
+        justify-self: flex-start;
+      }
+      span {
+        width: 30px;
+        height: 30px;
+        // padding: 0 15px;
+        display: flex;
         align-self: center;
-        color: $darkgrey;
-        font-size: 25px;
+        white-space: nowrap;
+        text-overflow: ellipsis;        
+        .fa-solid {
+          align-self: center;
+          color: $darkgrey;
+          font-size: 18px;
+        }
       }
       a {
-        display: block;
+        display: inline-block;
+        width: 100%;
         align-self: center;
         justify-self: flex-start;
         color: black;
-        font-size: 0.9em;
+        font-size: .9rem;
+        font-weight: 800;
         text-decoration: none;
-        padding-right: 30px;
-        margin-left: 15px;
+        margin: 0 15px;
       }
     }
   }

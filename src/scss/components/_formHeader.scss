@@ -2,10 +2,12 @@
 /****************************FORMHEADER*******************************************************/
 
 #formHeader {
+    width: 100%;
     background-color: $greyblue;
     padding: 25px;
     @include flexPosition(row, center, center);
     form {
+        width: 100%;
         @include flexPosition(row, center, flex-start);
         font-size: 20px;
         gap: 15px;

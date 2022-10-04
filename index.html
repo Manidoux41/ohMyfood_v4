@@ -7,7 +7,7 @@
     <!--Favicons-->
     <link rel="icon" href="public/assets/icon/favicon-32x32.png" type="image/png" sizes="32x32">
     <!--css-->
-    <link rel="stylesheet" href="public/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="public/css/prefixed/styles.css" type="text/css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css">
     <title>ohMyFood</title>
@@ -34,25 +34,33 @@
 
         </section>
         <section id="functionsList" class="wrapper">
-            <h2>Fonctionnements</h2>
+            <h2>Fonctionnement</h2>
             <ol class="containerList">
                 <li>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span class="icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </span>
                     <a href="#"> Choisissez un restaurant</a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-list"></i>
+                    <span class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
                     <a href="#"> Composez votre menu</a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-store"></i>
+                    <span class="icon">
+                        <i class="fa-solid fa-store"></i>
+                    </span>
                     <a href="#"> Dégustez au restaurant</a>
                 </li>
             </ol>
         </section>
-        <section id="restaurantCards" class="wrapper">
-            <h2>Restaurants</h2>
-            <div class="cards_container">
+        <section id="restaurantCards">
+            <div class="restaurantCardsTitle wrapper">
+                <h2 >Restaurants</h2>
+            </div>
+            <div class="cards_container wrapper">
                 <a href="pages/menu1.html" class="card">
                     <div class="image">
                         <span class="new">Nouveau</span>    
@@ -124,7 +132,7 @@
             <ul>
                 <li>
                     <i class="fa-solid fa-utensils"></i>
-                    <a href="">   Proposer un restaurant</a>
+                    <a href="">Proposer un restaurant</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-handshake-angle"></i>
@@ -134,7 +142,7 @@
                     <a href="">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="mailto:email@example.com?subject=Contactez ohMyfood">Contact</a>
+                    <a href="mailto:email@ohmyfood.com?subject=contacteznous">Contact</a>
                 </li>
             </ul>
         </nav>
