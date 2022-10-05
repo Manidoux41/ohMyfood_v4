@@ -1,0 +1,60 @@
+@use '../abstracts/' as *;
+
+.loaderMaison {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    height: 100vh;
+    inset: 0;
+    z-index: 99;
+    opacity: .9;
+    animation: disappear 300ms $animation-duration forwards;
+    transform-origin: top;
+    &::before {        
+        content: '';
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border-left: 10px solid red;
+        border-top: 10px solid blue;
+        border-right: 10px solid green;
+        border-bottom: 10px solid yellow;  
+        animation: spin $animation-duration infinite linear;        
+    }
+    h1 {
+        padding-left: 25px;
+        font-family: $fontTitle; 
+        animation: titre 3s infinite linear;   
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+   50% {
+        transform: rotate(360deg) scale(0);
+        opacity: 1;        
+    }
+   100% {
+        transform: rotate(360deg) scale(1); 
+        opacity: 0;        
+       
+    }
+}
+@keyframes titre {
+     0%{
+         opacity: 0;       
+     }
+    100% {
+         opacity: 1;        
+     }
+ }
