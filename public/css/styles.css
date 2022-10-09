@@ -262,6 +262,9 @@ footer li > a {
 #functionsList ol li:hover {
   transform: scale(1.02);
 }
+#functionsList ol li:hover .fa-solid {
+  color: #9356DC;
+}
 #functionsList ol li::before {
   counter-increment: section;
   content: counter(section);
