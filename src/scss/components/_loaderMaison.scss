@@ -3,8 +3,8 @@
 .loaderMaison {
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: $white;
     height: 100vh;
     inset: 0;
@@ -13,9 +13,15 @@
     animation: disappear 300ms $animation-duration forwards;
     transform-origin: top;
     &::before {        
-        content: '';
-        width: 80px;
-        height: 80px;
+        content: 'ohmyfood';
+        text-align: center;
+        font-family: $fontTitle;
+        font-size: 20px; 
+        padding: 90px;       
+        width: 105px;
+        height: 105px;       
+        align-self: center;
+        justify-self: center;
         border-radius: 50%;
         border-left: 10px solid red;
         border-top: 10px solid blue;
@@ -23,11 +29,7 @@
         border-bottom: 10px solid yellow;  
         animation: spin $animation-duration infinite linear;        
     }
-    h1 {
-        padding-left: 25px;
-        font-family: $fontTitle; 
-        animation: titre 3s infinite linear;   
-    }
+   
 }
 
 @keyframes disappear {
@@ -40,21 +42,9 @@
 }
 
 @keyframes spin {
-   50% {
-        transform: rotate(360deg) scale(0);
-        opacity: 1;        
-    }
    100% {
-        transform: rotate(360deg) scale(1); 
-        opacity: 0;        
+        transform: rotate(360deg); 
        
     }
 }
-@keyframes titre {
-     0%{
-         opacity: 0;       
-     }
-    100% {
-         opacity: 1;        
-     }
- }
+

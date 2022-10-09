@@ -8,6 +8,7 @@
     align-self: center;
     @include flexPosition(row, center, center);
     position: relative;
+    cursor: pointer;
     .fa-heart {
       align-self: center;
     }

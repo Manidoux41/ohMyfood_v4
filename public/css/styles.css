@@ -26,7 +26,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #101010;
 }
 
 img {
@@ -350,7 +350,7 @@ footer li > a {
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.289);
   border-radius: 16px;
   overflow: hidden;
-  color: #000000;
+  color: #101010;
   transition: 0.2s ease;
 }
 @media screen and (min-width: 768px) {
@@ -551,6 +551,7 @@ footer li > a {
   height: 58px;
   margin-right: -50px;
   transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 .categorie__menu .card__info .card__check .fa-regular {
   font-size: 35px;
@@ -558,7 +559,8 @@ footer li > a {
   align-self: center;
   justify-self: center;
   transform: rotate(180deg);
-  transition: all 0.5s ease-in;
+  text-shadow: 50px 50px 50px #99E2D0;
+  transition: all 0.3s ease-in;
 }
 .categorie__menu .card__info:hover .card__check {
   margin-right: 0;
@@ -599,6 +601,7 @@ footer li > a {
   align-items: center;
   gap: 25px;
   position: relative;
+  cursor: pointer;
 }
 .like .fa-heart {
   align-self: center;
@@ -622,29 +625,96 @@ footer li > a {
   opacity: 1;
 }
 
-/****************************LOADER*******************************************************/
-.loader {
+.loader-container {
   position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0.45turn, #FF79DA, #9356DC);
+  z-index: 99;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  background: #fff;
-  height: 100vh;
-  inset: 0;
-  z-index: 99;
-  opacity: 0.9;
-  animation: disappear 200ms 3s forwards;
-  transform-origin: top;
+  animation: disappear 0.1s ease-in-out 5s forwards;
 }
-.loader i {
-  animation: spin 3s infinite linear;
+.loader-container .loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #9356DC;
+}
+.loader-container .loader:before, .loader-container .loader:after {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  border-radius: 50%;
+}
+.loader-container .loader:before {
+  inset: 10px;
+  border-top-color: #FF79DA;
+  animation: spin 3s linear forwards;
+}
+.loader-container .loader:after {
+  inset: 30px;
+  border-top-color: #99E2D0;
+  animation: spin 1.5s linear forwards;
+}
+.loader-container .loader span {
+  font-family: "Shrikhand", serif;
+}
+.loader-container .loader span:nth-child(1) {
+  opacity: 0;
+  animation: appears 0.2s ease 0.5s forwards;
+}
+.loader-container .loader span:nth-child(2) {
+  opacity: 0;
+  animation: appears 0.2s ease 1s forwards;
+}
+.loader-container .loader span:nth-child(3) {
+  opacity: 0;
+  animation: appears 0.2s ease 1.5s forwards;
+}
+.loader-container .loader span:nth-child(4) {
+  opacity: 0;
+  animation: appears 0.2s ease 2s forwards;
+}
+.loader-container .loader span:nth-child(5) {
+  opacity: 0;
+  animation: appears 0.2s ease 2.5s forwards;
+}
+.loader-container .loader span:nth-child(6) {
+  opacity: 0;
+  animation: appears 0.2s ease 3s forwards;
+}
+.loader-container .loader span:nth-child(7) {
+  opacity: 0;
+  animation: appears 0.2s ease 3.5s forwards;
+}
+.loader-container .loader span:nth-child(8) {
+  opacity: 0;
+  animation: appears 0.2s ease 4s forwards;
+}
+.loader-container .loader .fa-solid {
+  color: linear-gradient(0.45turn, #FF79DA, #9356DC);
+  opacity: 0;
+  animation-name: appears, spin;
+  animation-duration: 4.5s, 4.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.loader-container .loader .fa-solid {
+  padding: 5px;
 }
 
 @keyframes disappear {
   to {
-    transform: scale(0);
+    transform: translateY(-100%);
   }
 }
 @keyframes spin {
@@ -652,59 +722,8 @@ footer li > a {
     transform: rotate(360deg);
   }
 }
-.loaderMaison {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  height: 100vh;
-  inset: 0;
-  z-index: 99;
-  opacity: 0.9;
-  animation: disappear 300ms 3s forwards;
-  transform-origin: top;
-}
-.loaderMaison::before {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border-left: 10px solid red;
-  border-top: 10px solid blue;
-  border-right: 10px solid green;
-  border-bottom: 10px solid yellow;
-  animation: spin 3s infinite linear;
-}
-.loaderMaison h1 {
-  padding-left: 25px;
-  font-family: "Shrikhand", serif;
-  animation: titre 3s infinite linear;
-}
-
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes spin {
-  50% {
-    transform: rotate(360deg) scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-    opacity: 0;
-  }
-}
-@keyframes titre {
-  0% {
-    opacity: 0;
-  }
-  100% {
+@keyframes appears {
+  to {
     opacity: 1;
   }
 }
