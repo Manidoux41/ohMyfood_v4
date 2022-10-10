@@ -43,8 +43,7 @@
         .fa-solid {
           color: $darkblue;
         }
-      }
-      
+      }      
       &::before {
         counter-increment: section;
         content: counter(section);
