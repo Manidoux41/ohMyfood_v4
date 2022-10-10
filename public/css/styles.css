@@ -557,8 +557,9 @@ footer li > a {
   cursor: pointer;
 }
 .categorie__menu .card__info .card__check .fa-regular {
-  font-size: 45px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #99e2d0;
   align-self: center;
   justify-self: center;
   transform: rotate(180deg);
