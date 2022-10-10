@@ -421,7 +421,7 @@ footer li > a {
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   font-weight: 700;
   margin: 0 15px;
 }
