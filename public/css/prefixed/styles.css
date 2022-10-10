@@ -414,15 +414,15 @@ footer li > a {
   -ms-flex-item-align: center;
       align-self: center;
   color: #7E7E7E;
-  font-size: 25px;
+  font-size: 20px;
 }
 #functionsList ol li a {
   display: inline-block;
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: 1.05rem;
-  font-weight: 800;
+  font-size: 0.95rem;
+  font-weight: 700;
   margin: 0 15px;
 }
 
