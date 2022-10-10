@@ -33,12 +33,12 @@
         &:before {
             inset: 10px;
             border-top-color: $lightblue;
-            animation: spin 2.5s linear forwards;
+            animation: spin 5.9s linear forwards;
         }
         &:after {
             inset: 30px;
             border-top-color: $tagColor;
-            animation: spin 1.5s linear forwards;
+            animation: spin 3.6s linear forwards;
         }
         span {
             font-family: $fontTitle;

@@ -969,14 +969,14 @@ footer li > a {
 .loader-container .loader:before {
   inset: 10px;
   border-top-color: #FF79DA;
-  -webkit-animation: spin 2.5s linear forwards;
-          animation: spin 2.5s linear forwards;
+  -webkit-animation: spin 5.9s linear forwards;
+          animation: spin 5.9s linear forwards;
 }
 .loader-container .loader:after {
   inset: 30px;
   border-top-color: #99E2D0;
-  -webkit-animation: spin 1.5s linear forwards;
-          animation: spin 1.5s linear forwards;
+  -webkit-animation: spin 3.6s linear forwards;
+          animation: spin 3.6s linear forwards;
 }
 .loader-container .loader span {
   font-family: "Shrikhand", serif;
