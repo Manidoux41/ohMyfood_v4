@@ -639,7 +639,7 @@ footer li > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 0.1s ease-in-out 5s forwards;
+  animation: disappear 1s ease-in-out 6.5s forwards;
 }
 .loader-container .loader {
   position: relative;
@@ -651,6 +651,8 @@ footer li > a {
   border-radius: 50%;
   border: 7px solid transparent;
   border-top-color: #9356DC;
+  animation: spin 3s linear forwards;
+  animation-iteration-count: 2;
 }
 .loader-container .loader:before, .loader-container .loader:after {
   content: "";
@@ -661,7 +663,7 @@ footer li > a {
 .loader-container .loader:before {
   inset: 10px;
   border-top-color: #FF79DA;
-  animation: spin 3s linear forwards;
+  animation: spin 2.5s linear forwards;
 }
 .loader-container .loader:after {
   inset: 30px;
