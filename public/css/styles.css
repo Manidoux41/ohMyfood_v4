@@ -460,7 +460,7 @@ footer li > a {
   transition: all 0.3s ease-in-out;
   text-align: center;
   align-self: center;
-  width: 250px;
+  width: 200px;
 }
 .menuContainer .btn:hover {
   transform: scale(1.02);
@@ -550,19 +550,18 @@ footer li > a {
   gap: 25px;
   background: #99e2d0;
   color: #fff;
-  width: 50px;
+  width: 60px;
   height: 58px;
-  margin-right: -50px;
+  margin-right: -60px;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
 .categorie__menu .card__info .card__check .fa-regular {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
   align-self: center;
   justify-self: center;
   transform: rotate(180deg);
-  text-shadow: 50px 50px 50px #99E2D0;
   transition: all 0.3s ease-in;
 }
 .categorie__menu .card__info:hover .card__check {

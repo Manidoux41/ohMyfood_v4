@@ -61,19 +61,17 @@
         @include flexPosition(row, center, center);
         background: #99e2d0;
         color: #fff;
-        width: 50px;
+        width: 60px;
         height: 58px;
-        margin-right: -50px;
-        transition: all 0.2s ease-in;
-        
+        margin-right: -60px;
+        transition: all 0.2s ease-in;        
         cursor: pointer;
         .fa-regular {
-          font-size: 35px;
+          font-size: 45px;
           font-weight: 900;
           align-self: center;
           justify-self: center;
-          transform: rotate(180deg);
-          text-shadow: 50px 50px 50px#99E2D0;
+          transform: rotate(180deg);          
           transition: all 0.3s ease-in;
         }
       }
