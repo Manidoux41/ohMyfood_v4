@@ -261,6 +261,7 @@ footer li > a {
 }
 #functionsList ol li:hover {
   transform: scale(1.02);
+  background: rgba(155, 183, 255, 0.33);
 }
 #functionsList ol li:hover .fa-solid {
   color: #9356DC;
@@ -703,7 +704,6 @@ footer li > a {
   animation: appears 0.2s ease 4s forwards;
 }
 .loader-container .loader .fa-solid {
-  color: linear-gradient(0.45turn, #FF79DA, #9356DC);
   opacity: 0;
   animation-name: appears, spin;
   animation-duration: 4.5s, 4.5s;

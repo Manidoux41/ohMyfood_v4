@@ -40,6 +40,7 @@
       @include zoomTransition();
       &:hover {
         @include zoomTransform();
+        background: rgba(155, 183, 255, 0.33);
         .fa-solid {
           color: $darkblue;
         }
