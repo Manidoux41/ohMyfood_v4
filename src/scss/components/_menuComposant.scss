@@ -73,7 +73,7 @@
           align-self: center;
           justify-self: center;
           transform: rotate(180deg);          
-          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in 0.05s;
         }
       }
       &:hover .card__check {
