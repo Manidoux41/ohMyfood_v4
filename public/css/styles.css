@@ -177,6 +177,10 @@ footer li > a {
 .loader-container .loader span {
   font-family: "Shrikhand", serif;
 }
+.loader-container .loader span:nth-child(0) {
+  opacity: 0;
+  animation: appears 0.2s ease 0s forwards;
+}
 .loader-container .loader span:nth-child(1) {
   opacity: 0;
   animation: appears 0.2s ease 0.5s forwards;
