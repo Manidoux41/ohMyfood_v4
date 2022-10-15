@@ -43,7 +43,6 @@
         }
         span {
             font-family: $fontTitle;
-
             @for $i from 0 through 8 {
                 &:nth-child(#{$i}) {
                     opacity: 0;
