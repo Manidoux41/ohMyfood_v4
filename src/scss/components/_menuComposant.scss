@@ -59,8 +59,8 @@
       }
       .card__check {
         @include flexPosition(row, center, center);
-        background: #99e2d0;
-        color: #fff;
+        background: $tertiary;
+        color: $white;
         width: 60px;
         height: 58px;
         margin-right: -60px;
@@ -69,7 +69,7 @@
         .fa-regular {
           font-size: 25px;
           font-weight: 600;
-          -webkit-text-stroke: 1px #99e2d0;
+          -webkit-text-stroke: 1px $tertiary;
           align-self: center;
           justify-self: center;
           transform: rotate(180deg);          

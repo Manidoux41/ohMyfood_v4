@@ -42,13 +42,13 @@
         @include zoomTransform();
         background: rgba(155, 183, 255, 0.33);
         .fa-solid {
-          color: $darkblue;
+          color: $primary;
         }
       }      
       &::before {
         counter-increment: section;
         content: counter(section);
-        background: $darkblue;
+        background: $primary;
         padding: 5px 10px;
         border-radius: 50%;
         margin-left: -30px;

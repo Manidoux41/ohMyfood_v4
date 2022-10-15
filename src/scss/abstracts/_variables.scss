@@ -1,21 +1,25 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap';
 
-/* Colors */
+/**** Colors ****/
+
+/*Theme Colors*/
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+
+/* Classics Colors */
 $greyblue: #EAEAEA;
 $lightgrey: #F6F6F6;
 $darkgrey: #7E7E7E;
-$lightblue: #FF79DA;
-$darkblue: #9356DC;
 $darkred: #3A3A3A;
 $blue: blue;
 $white: #fff;
 $black: #101010;
 $greenfooter: #353535;
-$tagColor: #99E2D0;
 $tagWordColor: #008766;
 
 /* Linear gradient */
-$linearBlue: linear-gradient(0.45turn, $lightblue, $darkblue);
+$linearBlue: linear-gradient(0.45turn, $secondary, $primary);
 
 
 /* Fonts */

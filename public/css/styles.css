@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap';
-/* Colors */
+/**** Colors ****/
+/*Theme Colors*/
+/* Classics Colors */
 /* Linear gradient */
 /* Fonts */
 /* Title Level */
@@ -657,7 +659,7 @@ footer li > a {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  background: #99e2d0;
+  background: #99E2D0;
   color: #fff;
   width: 60px;
   height: 58px;
@@ -668,7 +670,7 @@ footer li > a {
 .categorie__menu .card__info .card__check .fa-regular {
   font-size: 25px;
   font-weight: 600;
-  -webkit-text-stroke: 1px #99e2d0;
+  -webkit-text-stroke: 1px #99E2D0;
   align-self: center;
   justify-self: center;
   transform: rotate(180deg);

@@ -22,7 +22,7 @@
         height: 210px;
         border-radius: 50%;
         border: 7px solid transparent;
-        border-top-color: $darkblue;
+        border-top-color: $primary;
         animation: spin 3s linear forwards;
         animation-iteration-count: 2;
         &:before, &:after {
@@ -33,12 +33,12 @@
         }
         &:before {
             inset: 10px;
-            border-top-color: $lightblue;
+            border-top-color: $secondary;
             animation: spin 5.9s linear forwards;
         }
         &:after {
             inset: 30px;
-            border-top-color: $tagColor;
+            border-top-color: $tertiary;
             animation: spin 3.6s linear forwards;
         }
         span {
