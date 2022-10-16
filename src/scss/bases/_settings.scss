@@ -30,6 +30,14 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+h2 {
+    padding-left:20px;
+    font-size: 12px;
+    text-align: center;
+  } 
+  .visibility-hidden {
+    visibility: hidden;
+  }
 
 @media screen and (min-width:992px) {
     .wrapper {

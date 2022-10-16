@@ -9,8 +9,7 @@
     .restaurantCardsTitle{
         width: 100%;
         @include flexPositionSimple(row, flex-start);
-        h2 {
-            font-size: $titleLevel1;
+        h3 {
             align-self: flex-start;
             padding: 25px 0 5px 0;
             margin-left: 0;
@@ -49,9 +48,11 @@
             .image{
                 position: relative;
                 height: 75%;
+                filter:contrast(100%);
                 .new {
                     background: $tertiary;
                     color: $tagWordColor;
+                    filter: brightness(100%);
                     position: absolute;
                     padding: 5px 7px;
                     font-size: 18px;
@@ -66,6 +67,7 @@
                 @include flexPosition(row, space-between, center);
                 padding: 25px 5px 25px 25px;
                 .contentText{
+                    justify-self: flex-start;
                     white-space: nowrap;
                     text-overflow: ellipsis; 
                     h3{

@@ -7,7 +7,7 @@
     display: flex;
     @include flexPosition(column, center, center);
     h2 {
-        font-size: $titleLevel1;
+        font-size: $titleLevel2;
         text-align: center;
         margin-bottom: 25px;
     }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Composez votre menu et consulter nos carte en ligne!">
     <!--Favicons-->
     <link rel="icon" href="public/assets/icon/favicon-32x32.png" type="image/png" sizes="32x32">
     <!--css-->
@@ -39,7 +40,10 @@
     <main>
         <div id="formHeader">
             <form >
-                <label for="search-city"><i class="fa-solid fa-location-dot"></i></label>
+                <label for="search-city">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="visibility-hidden">search-city</span>
+                </label>
                 <input type="text" id="search-city" placeholder="Paris,  Belville">
             </form>
         </div>
@@ -52,7 +56,7 @@
         </section>
         <section id="functionsList">
             <div class="functionListCardsTitle wrapper">
-                <h2>Fonctionnement</h2>
+                <h3>Fonctionnement</h3>
             </div>
             <ol class="containerList wrapper">
                 <li>
@@ -77,7 +81,7 @@
         </section>
         <section id="restaurantCards">
             <div class="restaurantCardsTitle wrapper">
-                <h2 >Restaurants</h2>
+                <h3>Restaurants</h3>
             </div>
             <div class="cards_container wrapper">
                 <article class="card">
@@ -88,7 +92,7 @@
                     </a>
                     <div class="content">
                         <div class="contentText">
-                            <h3>La Palette du goût</h3>
+                            <h4>La Palette du goût</h4>
                             <p>Ménilmontant</p>
                         </div>
                         <div class="like fa-stack">
@@ -105,7 +109,7 @@
                     </a>
                     <div class="content">
                         <div class="contentText">
-                            <h3>La note enchantée</h3>
+                            <h4>La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
                         <div class="like fa-stack">
@@ -121,7 +125,7 @@
                     </a>
                     <div class="content">
                         <div class="contentText">
-                            <h3>A la française</h3>
+                            <h4>A la française</h4>
                             <p>Cité Rouge</p>
                         </div>
                         <div class="like fa-stack">
@@ -137,7 +141,7 @@
                     </a>
                     <div class="content">
                         <div class="contentText">
-                            <h3>Le délice des sens</h3>
+                            <h4>Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
                         </div>
                         <div class="like fa-stack">

@@ -27,10 +27,10 @@
   .title {
     padding-top: 25px;
     @include flexPositionSimple(row, space-around);
-    h2 {
-      font-family: $fontTitle;
-      text-align: center;
-    }       
+    h2 {      
+    font-family: $fontTitle;
+    font-size: 25px;
+    }      
   }
   .contentMenu {
     display: flex;

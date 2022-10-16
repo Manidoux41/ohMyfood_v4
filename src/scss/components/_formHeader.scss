@@ -12,12 +12,24 @@
         font-size: 20px;
         gap: 15px;
         margin-left:100px;
+        label {
+            position: relative;
+            .visibility-hidden{
+                position: absolute;
+                span {
+                    color: $greenfooter;
+                }
+            }
+        }
         input[type=text] {          
             background: $greyblue;
             border: none;
             font-size: 20px;
             &:focus{
                 outline: none;
+            }
+            &::placeholder {
+                color: $greenfooter;
             }
         }       
     }

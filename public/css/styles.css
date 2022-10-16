@@ -46,6 +46,16 @@ img {
   align-items: center;
 }
 
+h2 {
+  padding-left: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 992px) {
   .wrapper {
     max-width: 1440px;
@@ -70,6 +80,7 @@ header .heading {
 }
 header h1 {
   font-family: "Shrikhand", serif;
+  font-size: 30px;
   text-align: center;
 }
 header .returnHome {
@@ -77,7 +88,7 @@ header .returnHome {
   font-size: 30px;
   width: 100px;
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 10px;
 }
 
@@ -266,6 +277,15 @@ footer li > a {
   gap: 15px;
   margin-left: 100px;
 }
+#formHeader form label {
+  position: relative;
+}
+#formHeader form label .visibility-hidden {
+  position: absolute;
+}
+#formHeader form label .visibility-hidden span {
+  color: #353535;
+}
 #formHeader form input[type=text] {
   background: #EAEAEA;
   border: none;
@@ -273,6 +293,9 @@ footer li > a {
 }
 #formHeader form input[type=text]:focus {
   outline: none;
+}
+#formHeader form input[type=text]::placeholder {
+  color: #353535;
 }
 
 /****************************HERO*******************************************************/
@@ -287,7 +310,7 @@ footer li > a {
   gap: 25px;
 }
 #hero h2 {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -331,8 +354,7 @@ footer li > a {
   flex-direction: row;
   justify-content: flex-start;
 }
-#functionsList .functionListCardsTitle h2 {
-  font-size: 30px;
+#functionsList .functionListCardsTitle h3 {
   align-self: flex-start;
   padding: 25px 0 25px 0;
   margin-left: 0;
@@ -438,8 +460,7 @@ footer li > a {
   flex-direction: row;
   justify-content: flex-start;
 }
-#restaurantCards .restaurantCardsTitle h2 {
-  font-size: 30px;
+#restaurantCards .restaurantCardsTitle h3 {
   align-self: flex-start;
   padding: 25px 0 5px 0;
   margin-left: 0;
@@ -486,10 +507,12 @@ footer li > a {
 #restaurantCards .cards_container .card .image {
   position: relative;
   height: 75%;
+  filter: contrast(100%);
 }
 #restaurantCards .cards_container .card .image .new {
   background: #99E2D0;
   color: #008766;
+  filter: brightness(100%);
   position: absolute;
   padding: 5px 7px;
   font-size: 18px;
@@ -508,6 +531,7 @@ footer li > a {
   padding: 25px 5px 25px 25px;
 }
 #restaurantCards .cards_container .card .content .contentText {
+  justify-self: flex-start;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -552,7 +576,7 @@ footer li > a {
 }
 .menuContainer .title h2 {
   font-family: "Shrikhand", serif;
-  text-align: center;
+  font-size: 25px;
 }
 .menuContainer .contentMenu {
   display: flex;
@@ -708,8 +732,9 @@ footer li > a {
 /****************************HEARTS*******************************************************/
 .like {
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
+  justify-self: flex-end;
   align-self: center;
   display: flex;
   flex-direction: row;
