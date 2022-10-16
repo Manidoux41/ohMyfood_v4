@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disappear 1s ease-in-out 6.5s forwards;
+    animation: disappear .5s ease-in-out 3s forwards;
     .loader {
         position: relative;
         display: flex;
@@ -23,8 +23,8 @@
         border-radius: 50%;
         border: 7px solid transparent;
         border-top-color: $primary;
-        animation: spin 3s linear forwards;
-        animation-iteration-count: 2;
+        animation: spin 2.8s linear forwards;
+        animation-iteration-count: 1;
         &:before, &:after {
             content: "";
             position: absolute;
@@ -34,26 +34,26 @@
         &:before {
             inset: 10px;
             border-top-color: $secondary;
-            animation: spin 5.9s linear forwards;
+            animation: spin 2s linear forwards;
         }
         &:after {
             inset: 30px;
             border-top-color: $tertiary;
-            animation: spin 3.6s linear forwards;
+            animation: spin 1.5s linear forwards;
         }
         span {
             font-family: $fontTitle;
             @for $i from 0 through 8 {
                 &:nth-child(#{$i}) {
                     opacity: 0;
-                    animation: appears .2s ease .5s * $i forwards;
+                    animation: appears .1s ease .3s * $i forwards;
                 }
             }
         }
         .fa-solid{
             opacity: 0;
             animation-name: appears, spin;
-            animation-duration: 4.5s, 4.5s;
+            animation-duration: 2.9s, 2.9s;
             animation-timing-function: ease;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
