@@ -702,12 +702,6 @@ footer li > a {
   transform: rotate(180deg);
   transition: all 0.3s ease-in 0.05s;
 }
-.categorie__menu .card__info:hover .card__check {
-  margin-right: 0;
-}
-.categorie__menu .card__info:hover .fa-regular {
-  transform: rotate(360deg);
-}
 .categorie__menu .card .card__content {
   overflow: hidden;
 }
@@ -716,6 +710,12 @@ footer li > a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.categorie__menu .card:hover .card__check {
+  margin-right: 0;
+}
+.categorie__menu .card:hover .fa-regular {
+  transform: rotate(360deg);
 }
 
 /****Animations*****/

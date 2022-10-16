@@ -76,12 +76,6 @@
           transition: all 0.3s ease-in 0.05s;
         }
       }
-      &:hover .card__check {
-        margin-right: 0;
-      }
-      &:hover .fa-regular {
-        transform: rotate(360deg);
-      }
     }
     .card__content {
       overflow: hidden;
@@ -91,6 +85,12 @@
         white-space: nowrap;
         text-overflow: ellipsis;
       }
+    }
+    &:hover .card__check {
+      margin-right: 0;
+    }
+    &:hover .fa-regular {
+      transform: rotate(360deg);
     }
   }
 }
