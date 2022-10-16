@@ -8,12 +8,12 @@
     width: 100%;
     height: 100vh;
     background: $linearBlue;
-    opacity: .97;
+    opacity: .99;
     z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disappear .5s ease-in-out 3s forwards;
+    animation: disappear .2s ease-in-out 2s forwards;
     .loader {
         position: relative;
         display: flex;
@@ -24,7 +24,7 @@
         border-radius: 50%;
         border: 7px solid transparent;
         border-top-color: $primary;
-        animation: spin 2.8s linear forwards;
+        animation: spin 1.9s linear forwards;
         animation-iteration-count: 1;
         &:before, &:after {
             content: "";
@@ -35,26 +35,26 @@
         &:before {
             inset: 10px;
             border-top-color: $secondary;
-            animation: spin 2s linear forwards;
+            animation: spin 1s linear forwards;
         }
         &:after {
             inset: 30px;
             border-top-color: $tertiary;
-            animation: spin 1.5s linear forwards;
+            animation: spin .5s linear forwards;
         }
         span {
             font-family: $fontTitle;
             @for $i from 0 through 8 {
                 &:nth-child(#{$i}) {
                     opacity: 0;
-                    animation: appears .1s ease .3s * $i forwards;
+                    animation: appears .1s ease-in-out .2s * $i forwards;
                 }
             }
         }
         .fa-solid{
             opacity: 0;
             animation-name: appears, spin;
-            animation-duration: 2.9s, 2.9s;
+            animation-duration: 1.5s, 1.5s;
             animation-timing-function: ease;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
@@ -66,6 +66,7 @@
 }
 @keyframes disappear {
     to {
+        opacity: 0;
         transform: translateY(-100%);
     }
 }
